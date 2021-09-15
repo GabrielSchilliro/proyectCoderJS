@@ -3,7 +3,8 @@ $.get('https://apipetshop.herokuapp.com/api/articulos' , function (respuesta, es
     console.log(respuesta);
      if(estado === "success"){
         let misDatos = respuesta;
-        for (const dato of misDatos) {
+        let arrayDatos = Array.from(misDatos);
+        for (const dato of arrayDatos) {
             $("main").append(`
                         <div class="card">
                             <h5 class="card-header">ID: ${dato.id}</h5>
