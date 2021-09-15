@@ -1,0 +1,134 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño y color del título */
+.tittle {
+  font-size: 40px;
+  color: #4d5371;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+h1 {
+  color: #18b3b3;
+  font-size: 2em;
+}
+
+h2 {
+  /* Color de los encabezados h2 */
+  color: #18b3b3;
+  text-align: center;
+}
+
+.h2-icons {
+  font-size: 22.96px;
+  color: #000;
+}
+
+.h2-shop {
+  color: #4d5371;
+  font-size: 23px;
+}
+/* SLIDER DE IMAGENES */
+
+.carousel-inner {
+  max-height: 40rem;
+  max-width: 40rem;
+}
+
+/* INFORMATIVE ICONS */
+
+.section-informative-banners {
+  padding: 20px 0;
+  text-align: center;
+}
+  
+.service-item {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+  
+.service-icon {
+  height: 100px;
+  margin: 10px 0;
+}
+  
+.service-icon:hover {
+  color: #18b3b3;
+}
+  
+.service-tittle {
+  margin: 0 0 5px 0;
+  color: #000;
+}
+  
+.service-tittle:hover {
+  color: #18b3b3;
+  transition: .3s ease;
+}
+
+.history-image {
+  object-fit: cover;
+  width: 600px; 
+  height: 300px;
+}
+
+.div-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  &.hidden{
+        overflow: hidden;
+    }
+  .img{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;   
+      transform:scale(1);
+      -ms-transform:scale(1); // IE 9 
+      -moz-transform:scale(1); // Firefox 
+      -webkit-transform:scale(1); // Safari and Chrome 
+      -o-transform:scale(1); // Opera 
+      transition: all 400ms ease-in-out; // IE 9   
+  }        
+  &:hover{
+      .img{
+          transform:scale(0.95);
+          -ms-transform:scale(0.95); // IE 9 
+          -moz-transform:scale(0.95); // Firefox 
+          -webkit-transform:scale(0.95); // Safari and Chrome 
+          -o-transform:scale(0.95); // Opera
+          border-radius: 10px;
+      }
+  
+  } 
+}
+
+@media (max-width: 768px) {
+  .history-image {
+      width: 100%;
+  }
+}
+
+/* INICIO SHOP */
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FIN SHOP */
